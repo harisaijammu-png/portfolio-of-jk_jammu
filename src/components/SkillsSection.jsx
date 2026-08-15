@@ -12,7 +12,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="relative min-h-screen flex items-center justify-center py-24 overflow-hidden snap-center">
       {/* Background Number */}
-      <div className="absolute left-[-2%] md:left-[4%] top-[35%] md:text-[22vh] text-[15vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
+      <div className="absolute left-[-2%] md:left-[4%] top-[35%] md:text-[28vh] text-[20vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
         02
       </div>
 
