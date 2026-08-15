@@ -120,7 +120,7 @@ const HeroSection = () => {
           
           <motion.div variants={itemVariants} className="mt-4">
             <a 
-              href="/resume.pdf" 
+              href="/resume.docx" 
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
