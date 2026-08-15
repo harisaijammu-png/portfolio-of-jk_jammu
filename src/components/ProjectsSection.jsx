@@ -7,7 +7,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="relative min-h-screen flex items-center justify-center py-4 md:py-6 overflow-hidden snap-center bg-[#02060d]">
       {/* Background Number */}
-      <div className="absolute right-[-2%] md:right-[4%] top-[35%] md:top-[40%] text-[15vh] md:text-[22vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
+      <div className="absolute right-[-2%] md:right-[0%] top-[35%] md:top-[40%] text-[15vh] md:text-[22vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
         05
       </div>
 
