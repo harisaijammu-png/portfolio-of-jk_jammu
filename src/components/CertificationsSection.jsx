@@ -78,7 +78,7 @@ const CertificationsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-6xl mx-auto lg:ml-auto lg:mr-12 w-full"
+          className="max-w-6xl mx-auto w-full"
         >
           <div className="glass-panel px-6 md:px-8 pb-4 md:pb-6 pt-4 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)]">
             
