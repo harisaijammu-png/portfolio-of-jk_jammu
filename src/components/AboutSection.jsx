@@ -15,7 +15,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-5xl mx-auto w-full"
+          className="max-w-5xl mx-auto lg:mr-auto lg:ml-8 w-full"
         >
 
 

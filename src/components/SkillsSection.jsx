@@ -21,7 +21,7 @@ const SkillsSection = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-5xl mx-auto w-full"
+          className="max-w-5xl mx-auto lg:ml-auto lg:mr-8 w-full"
         >
           <div className="glass-panel px-8 md:px-12 pb-6 md:pb-8 pt-4 md:pt-5 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)]">
             {/* Header Layout */}

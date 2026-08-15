@@ -38,7 +38,7 @@ const EducationSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto w-full"
+          className="max-w-5xl mx-auto lg:mr-auto lg:ml-8 w-full"
         >
           <div className="glass-panel px-6 md:px-8 pb-6 md:pb-8 pt-4 md:pt-5 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)]">
             
