@@ -75,7 +75,7 @@ const CertificationsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto w-full"
+          className="max-w-7xl mx-auto w-full"
         >
           <div className="glass-panel px-6 md:px-8 pb-4 md:pb-6 pt-4 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)]">
             
@@ -96,7 +96,7 @@ const CertificationsSection = () => {
             </div>
 
             <div className="w-full relative z-10">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 justify-center items-start">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 justify-center items-stretch">
             {certifications.map((cert, idx) => (
               <motion.div
                 key={cert.id}
@@ -105,26 +105,26 @@ const CertificationsSection = () => {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 onClick={() => setSelectedCert(cert)}
-                className="glass-panel p-3 md:p-4 rounded-xl border-[var(--color-card-border)] bg-[#050a14]/80 hover:bg-[#081020]/90 transition-all duration-300 cursor-pointer group hover:shadow-[0_0_30px_rgba(0,210,255,0.15)] flex flex-col relative overflow-hidden"
+                className="glass-panel p-5 md:p-8 rounded-2xl border border-[var(--color-brand)]/20 bg-[#050a14]/80 hover:bg-[#081020]/90 transition-all duration-300 cursor-pointer group hover:shadow-[0_0_40px_rgba(0,210,255,0.2)] hover:border-[var(--color-brand)]/50 flex flex-col relative overflow-hidden"
               >
                 {/* Subtle gradient hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00d2ff]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#00d2ff]/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                 
-                <div className="flex justify-between items-start mb-2 relative z-10">
-                  <div className="w-8 h-8 rounded-lg bg-[#001829] border border-[#00d2ff]/20 flex items-center justify-center shadow-[0_0_15px_rgba(0,210,255,0.1)] group-hover:shadow-[0_0_20px_rgba(0,210,255,0.3)] transition-all scale-75 origin-top-left">
+                <div className="flex justify-between items-start mb-6 relative z-10">
+                  <div className="w-14 h-14 rounded-xl bg-[#001829] border border-[#00d2ff]/30 flex items-center justify-center shadow-[0_0_20px_rgba(0,210,255,0.15)] group-hover:shadow-[0_0_30px_rgba(0,210,255,0.4)] transition-all duration-300 group-hover:scale-110 origin-top-left">
                     {cert.icon}
                   </div>
-                  <span className="inline-block px-2 py-1 text-[8px] md:text-[9px] font-bold tracking-widest text-[#00d2ff] border border-[#00d2ff]/30 rounded-full uppercase bg-[#00d2ff]/5">
+                  <span className="inline-block px-4 py-1.5 text-[10px] md:text-xs font-bold tracking-widest text-[#00d2ff] border border-[#00d2ff]/40 rounded-full uppercase bg-[#00d2ff]/10">
                     {cert.badge}
                   </span>
                 </div>
                 
-                <div className="relative z-10">
-                  <h3 className="text-white font-bold text-xs md:text-sm mb-1 leading-tight group-hover:text-[var(--color-brand)] transition-colors">
+                <div className="relative z-10 flex-grow flex flex-col justify-end">
+                  <h3 className="text-white font-extrabold text-lg md:text-xl mb-2 leading-tight group-hover:text-[var(--color-brand)] transition-colors">
                     {cert.title}
                   </h3>
                   
-                  <p className="text-[#6b8299] text-[10px] md:text-[11px] leading-snug">
+                  <p className="text-[#8b9bb4] font-medium text-xs md:text-sm leading-relaxed">
                     {cert.provider}
                   </p>
                 </div>
