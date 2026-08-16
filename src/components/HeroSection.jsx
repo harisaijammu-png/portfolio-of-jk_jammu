@@ -115,7 +115,7 @@ const HeroSection = () => {
           
           <motion.div variants={itemVariants} className="mt-4">
             <a 
-              href="/resume.docx" 
+              href="/resume.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
