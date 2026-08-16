@@ -22,38 +22,38 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative h-full w-full flex flex-col items-center justify-center pt-8 pb-12 overflow-hidden snap-center bg-transparent">
+    <section id="contact" className="relative h-full w-full flex flex-col items-center justify-center py-12 md:py-24 overflow-hidden snap-center bg-transparent">
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10 w-full translate-y-8 md:translate-y-12">
+      <div className="w-full mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center justify-center h-full translate-y-8 md:translate-y-12">
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto w-full"
+          className="max-w-6xl mx-auto w-full"
         >
-          <div className="bg-slate-900/40 backdrop-blur-lg border border-white/10 p-8 md:p-12 rounded-3xl relative group flex flex-col shadow-2xl">
+          <div className="bg-slate-900/40 backdrop-blur-lg border border-white/10 p-6 md:p-8 rounded-3xl relative group flex flex-col shadow-2xl">
             
             {/* Header Layout */}
-            <div className="flex justify-between items-end mb-8 md:mb-10 border-b border-white/5 pb-4 md:pb-6">
+            <div className="flex justify-between items-end mb-6 border-b border-white/5 pb-4">
               <div className="px-6 py-2 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300 text-sm md:text-base font-bold tracking-widest uppercase shadow-sm">
                 CONTACT DETAILS
               </div>
             </div>
 
             {/* Sub Header Text */}
-            <div className="mb-8 text-left">
+            <div className="mb-6 text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4 tracking-tight">Let's Build Something Together</h2>
               <p className="text-slate-400 text-sm md:text-base max-w-2xl leading-relaxed">
                 Open to working student roles and part-time opportunities.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               
               {/* Left Column (Info) */}
-              <div className="bg-white/5 rounded-2xl p-6 md:p-8 border border-white/5 shadow-sm flex flex-col justify-between backdrop-blur-sm">
+              <div className="bg-white/5 rounded-2xl p-5 md:p-6 border border-white/5 shadow-sm flex flex-col justify-between backdrop-blur-sm">
                 <div>
                   <h3 className="text-lg font-bold text-slate-100 mb-6">Contact Info</h3>
                   
@@ -82,7 +82,7 @@ const ContactSection = () => {
                 </div>
 
                 {/* Social Icons */}
-                <div className="flex items-center gap-3 mt-10 pt-6 border-t border-white/5">
+                <div className="flex items-center gap-3 mt-6 pt-5 border-t border-white/5">
                   {[
                     { icon: ExternalLink, link: "#" },
                     { icon: Link, link: "#" },
@@ -103,9 +103,9 @@ const ContactSection = () => {
               </div>
 
               {/* Right Column (Form) */}
-              <div className="bg-white/5 rounded-2xl p-6 md:p-8 border border-white/5 shadow-sm backdrop-blur-sm">
-                <form onSubmit={handleSubmit} className="flex flex-col h-full justify-between space-y-5">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="bg-white/5 rounded-2xl p-5 md:p-6 border border-white/5 shadow-sm backdrop-blur-sm">
+                <form onSubmit={handleSubmit} className="flex flex-col h-full justify-between space-y-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-[11px] text-sky-200/60 font-medium ml-1 tracking-wide uppercase">Name</label>
                       <input 
@@ -153,7 +153,7 @@ const ContactSection = () => {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Tell me about the opportunity or project..."
-                      className="w-full h-20 md:h-24 bg-slate-950/50 border border-white/5 rounded-xl px-3 py-2.5 text-xs md:text-sm text-slate-200 focus:outline-none focus:border-sky-500/50 focus:ring-1 focus:ring-sky-500/50 transition-all resize-none placeholder:text-slate-600"
+                      className="w-full h-16 md:h-20 bg-slate-950/50 border border-white/5 rounded-xl px-3 py-2.5 text-xs md:text-sm text-slate-200 focus:outline-none focus:border-sky-500/50 focus:ring-1 focus:ring-sky-500/50 transition-all resize-none placeholder:text-slate-600"
                     ></textarea>
                   </div>
 

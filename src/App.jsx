@@ -198,7 +198,7 @@ function App() {
       </motion.main>
       
       {activeIndex === sections.length - 1 && (
-        <div className="fixed bottom-4 left-0 w-full text-center text-gray-500 text-xs z-50 animate-pulse">
+        <div className="fixed bottom-0 left-0 w-full text-center text-slate-500 text-[10px] md:text-xs z-50 py-2.5 border-t border-white/5 bg-slate-950/80 backdrop-blur-md">
           <p>&copy; {new Date().getFullYear()} JAYAKRISHNA JAMMU. Built with React & Framer Motion.</p>
         </div>
       )}

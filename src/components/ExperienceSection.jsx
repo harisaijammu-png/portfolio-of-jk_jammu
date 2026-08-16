@@ -13,12 +13,12 @@ const ExperienceSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto w-full"
+          className="max-w-6xl mx-auto w-full"
         >
-          <div className="bg-slate-900/40 backdrop-blur-lg border border-white/10 p-8 md:p-12 rounded-3xl relative group shadow-2xl">
+          <div className="bg-slate-900/40 backdrop-blur-lg border border-white/10 p-6 md:p-8 rounded-3xl relative group shadow-2xl">
             
             {/* Header Layout */}
-            <div className="flex justify-between items-end mb-8 md:mb-10 border-b border-white/5 pb-4 md:pb-6">
+            <div className="flex justify-between items-end mb-6 border-b border-white/5 pb-4">
               <div className="px-6 py-2 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300 text-sm md:text-base font-bold tracking-widest uppercase shadow-sm">
                 EXPERIENCE
               </div>
@@ -26,7 +26,7 @@ const ExperienceSection = () => {
 
             {/* Content Layout */}
             <div className="pt-2">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6 md:mb-8">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 md:mb-6">
                 <div>
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-100 mb-3">Junior Robotics Engineer</h3>
                   <div className="flex items-center space-x-2 text-sky-400 mb-3 font-medium text-lg">
@@ -46,7 +46,7 @@ const ExperienceSection = () => {
                 </div>
               </div>
 
-              <div className="mt-6 space-y-5">
+              <div className="mt-4 space-y-4">
                 {[
                   { icon: <Users className="w-4 h-4 text-sky-400" />, text: "Worked under a Senior Robotics Engineer to help establish the company's robotics development capability from the ground up." },
                   { icon: <Cpu className="w-4 h-4 text-sky-400" />, text: "Designed and built Arduino-based prototypes in C/C++, taking systems from concept through to validated hardware." },
@@ -61,7 +61,7 @@ const ExperienceSection = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.4, delay: idx * 0.1 }}
-                    className="flex items-start space-x-4 md:space-x-5"
+                    className="flex items-start space-x-4 md:space-x-5 py-1"
                   >
                     <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mt-1">
                       {item.icon}
@@ -74,7 +74,7 @@ const ExperienceSection = () => {
               </div>
 
               {/* Experience Letter Button */}
-              <div className="mt-10 flex justify-center md:justify-start">
+              <div className="mt-6 flex justify-center md:justify-start">
                 <a 
                   href="/certs/Exp_Letter.pdf" 
                   target="_blank" 
