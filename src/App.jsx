@@ -27,30 +27,24 @@ const Card3DWrapper = ({ index, activeIndex, children }) => {
   const variants = {
     active: {
       y: "0%",
-      scale: 1,
       rotateX: 0,
-      translateZ: 0,
       opacity: 1,
       zIndex: 10,
       pointerEvents: "auto",
       transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
     },
     past: {
-      y: "-20%",
-      scale: 0.85,
-      rotateX: -10,
-      translateZ: -200,
+      y: "-50%",
+      rotateX: 90,
       opacity: 0,
       zIndex: 0,
       pointerEvents: "none",
       transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
     },
     future: {
-      y: "100%",
-      scale: 1,
-      rotateX: 0,
-      translateZ: 0,
-      opacity: 1,
+      y: "50%",
+      rotateX: -90,
+      opacity: 0,
       zIndex: 20,
       pointerEvents: "none",
       transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
@@ -69,12 +63,6 @@ const Card3DWrapper = ({ index, activeIndex, children }) => {
       className="absolute inset-0 w-full h-full transform-gpu"
       style={{ transformStyle: 'preserve-3d', transformOrigin: 'center center' }}
     >
-      <motion.div 
-        className="absolute inset-0 bg-black/60 z-50 pointer-events-none"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isActive ? 0 : 1 }}
-        transition={{ duration: 0.8 }}
-      />
       {children}
     </motion.div>
   );
