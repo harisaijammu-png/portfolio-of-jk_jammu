@@ -5,9 +5,9 @@ import evProjectImg from '../assets/ev_project.jpg';
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="relative min-h-screen flex items-center justify-center py-4 md:py-6 overflow-hidden snap-center bg-[#02060d]">
+    <section id="projects" className="relative min-h-screen flex items-center justify-center py-4 md:py-6 overflow-hidden snap-center bg-transparent">
       {/* Background Number */}
-      <div className="absolute right-[-2%] md:right-[0%] top-[35%] md:top-[40%] text-[20vh] md:text-[28vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
+      <div className="absolute right-[-2%] md:right-[15%] top-[35%] md:top-[40%] text-[25vh] md:text-[40vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
         05
       </div>
 

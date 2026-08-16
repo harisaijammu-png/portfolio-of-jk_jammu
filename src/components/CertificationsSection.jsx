@@ -65,10 +65,10 @@ const CertificationsSection = () => {
   const [selectedCert, setSelectedCert] = useState(null);
 
   return (
-    <section id="certifications" className="relative min-h-screen flex items-center justify-center py-4 md:py-8 overflow-hidden snap-center bg-[#02060d]">
+    <section id="certifications" className="relative min-h-screen flex items-center justify-center py-4 md:py-8 overflow-hidden snap-center bg-transparent">
       
       {/* Background Number */}
-      <div className="absolute left-[-2%] md:left-[0%] top-[35%] md:top-[40%] text-[20vh] md:text-[28vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
+      <div className="absolute left-[-2%] md:left-[15%] top-[35%] md:top-[40%] text-[25vh] md:text-[40vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
         06
       </div>
 

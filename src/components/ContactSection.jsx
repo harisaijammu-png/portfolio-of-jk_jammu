@@ -24,7 +24,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="relative h-full flex flex-col items-center justify-center pt-8 pb-12 overflow-hidden snap-center bg-transparent">
       {/* Background Number */}
-      <div className="absolute right-[-2%] md:right-[4%] top-[35%] md:top-[40%] text-[20vh] md:text-[28vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
+      <div className="absolute right-[-2%] md:right-[15%] top-[35%] md:top-[40%] text-[25vh] md:text-[40vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
         07
       </div>
 
