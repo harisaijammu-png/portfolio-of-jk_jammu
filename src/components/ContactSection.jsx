@@ -22,8 +22,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative h-full flex flex-col items-center justify-center pt-8 pb-12 overflow-hidden snap-center bg-transparent">
-
+    <section id="contact" className="relative h-full w-full flex flex-col items-center justify-center pt-8 pb-12 overflow-hidden snap-center bg-transparent">
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 w-full translate-y-8 md:translate-y-12">
         
@@ -34,19 +33,19 @@ const ContactSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto w-full"
         >
-          <div className="glass-panel px-5 md:px-8 pb-5 md:pb-8 pt-4 md:pt-5 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)] flex flex-col">
+          <div className="bg-slate-900/40 backdrop-blur-lg border border-white/10 p-8 md:p-12 rounded-3xl relative group flex flex-col shadow-2xl">
             
             {/* Header Layout */}
-            <div className="flex justify-between items-end mb-4 md:mb-5 border-b border-white/5 pb-3 md:pb-4">
-              <div className="px-8 py-3 rounded-full border border-[var(--color-brand)]/50 bg-[var(--color-brand)]/10 text-[var(--color-brand)] text-sm md:text-lg font-bold tracking-widest uppercase shadow-[0_0_15px_var(--color-brand-glow)]">
+            <div className="flex justify-between items-end mb-8 md:mb-10 border-b border-white/5 pb-4 md:pb-6">
+              <div className="px-6 py-2 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300 text-sm md:text-base font-bold tracking-widest uppercase shadow-sm">
                 CONTACT DETAILS
               </div>
             </div>
 
             {/* Sub Header Text */}
-            <div className="mb-6 text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">Let's Build Something Together</h2>
-              <p className="text-[#8b9bb4] text-[13px] md:text-[15px] max-w-2xl leading-relaxed">
+            <div className="mb-8 text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4 tracking-tight">Let's Build Something Together</h2>
+              <p className="text-slate-400 text-sm md:text-base max-w-2xl leading-relaxed">
                 Open to working student roles and part-time opportunities.
               </p>
             </div>
@@ -54,30 +53,30 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
               
               {/* Left Column (Info) */}
-              <div className="bg-[#0a111a]/80 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-[var(--color-brand)] shadow-[0_5px_20px_rgba(0,0,0,0.3)] flex flex-col justify-between">
+              <div className="bg-white/5 rounded-2xl p-6 md:p-8 border border-white/5 shadow-sm flex flex-col justify-between backdrop-blur-sm">
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-6">Contact Info</h3>
+                  <h3 className="text-lg font-bold text-slate-100 mb-6">Contact Info</h3>
                   
                   <div className="space-y-6">
-                    <div className="flex items-center gap-4 group">
-                      <div className="w-10 h-10 rounded-xl bg-[#111827] border border-white/10 flex items-center justify-center group-hover:border-[var(--color-brand)] group-hover:shadow-[0_0_15px_var(--color-brand-glow)] transition-all duration-300 flex-shrink-0">
-                        <Mail size={16} className="text-[var(--color-brand)]" />
+                    <div className="flex items-center gap-4 group/item">
+                      <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center group-hover/item:border-sky-500/40 group-hover/item:bg-sky-500/20 transition-all duration-300 flex-shrink-0 shadow-sm">
+                        <Mail size={16} className="text-sky-300" />
                       </div>
-                      <span className="text-base text-gray-300 break-all">jammujayakrishna789@gmail.com</span>
+                      <span className="text-sm md:text-base text-slate-300 break-all">jammujayakrishna789@gmail.com</span>
                     </div>
                     
-                    <div className="flex items-center gap-4 group">
-                      <div className="w-10 h-10 rounded-xl bg-[#111827] border border-white/10 flex items-center justify-center group-hover:border-[var(--color-brand)] group-hover:shadow-[0_0_15px_var(--color-brand-glow)] transition-all duration-300 flex-shrink-0">
-                        <Phone size={16} className="text-[var(--color-brand)]" />
+                    <div className="flex items-center gap-4 group/item">
+                      <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center group-hover/item:border-sky-500/40 group-hover/item:bg-sky-500/20 transition-all duration-300 flex-shrink-0 shadow-sm">
+                        <Phone size={16} className="text-sky-300" />
                       </div>
-                      <span className="text-base text-gray-300">+49 155 1105 1412</span>
+                      <span className="text-sm md:text-base text-slate-300">+49 155 1105 1412</span>
                     </div>
                     
-                    <div className="flex items-center gap-4 group">
-                      <div className="w-10 h-10 rounded-xl bg-[#111827] border border-white/10 flex items-center justify-center group-hover:border-[var(--color-brand)] group-hover:shadow-[0_0_15px_var(--color-brand-glow)] transition-all duration-300 flex-shrink-0">
-                        <MapPin size={16} className="text-[var(--color-brand)]" />
+                    <div className="flex items-center gap-4 group/item">
+                      <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center group-hover/item:border-sky-500/40 group-hover/item:bg-sky-500/20 transition-all duration-300 flex-shrink-0 shadow-sm">
+                        <MapPin size={16} className="text-sky-300" />
                       </div>
-                      <span className="text-base text-gray-300">Erlangen, Germany</span>
+                      <span className="text-sm md:text-base text-slate-300">Erlangen, Germany</span>
                     </div>
                   </div>
                 </div>
@@ -95,7 +94,7 @@ const ContactSection = () => {
                       href={social.link}
                       target={social.link.startsWith('http') ? "_blank" : "_self"}
                       rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-[#111827] border border-white/10 flex items-center justify-center text-gray-400 hover:text-[var(--color-brand)] hover:border-[var(--color-brand)] hover:shadow-[0_0_15px_var(--color-brand-glow)] transition-all duration-300"
+                      className="w-10 h-10 rounded-full bg-slate-900/50 border border-white/5 flex items-center justify-center text-slate-400 hover:text-sky-200 hover:border-sky-500/30 hover:bg-sky-500/10 transition-all duration-300 shadow-sm"
                     >
                       <social.icon size={16} />
                     </a>
@@ -104,11 +103,11 @@ const ContactSection = () => {
               </div>
 
               {/* Right Column (Form) */}
-              <div className="bg-[#0a111a]/80 backdrop-blur-md rounded-2xl p-5 md:p-6 border border-[var(--color-brand)] shadow-[0_5px_20px_rgba(0,0,0,0.3)]">
-                <form onSubmit={handleSubmit} className="flex flex-col h-full justify-between space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-1">
-                      <label className="text-[11px] text-gray-200 font-medium ml-1 tracking-wide uppercase">Name</label>
+              <div className="bg-white/5 rounded-2xl p-6 md:p-8 border border-white/5 shadow-sm backdrop-blur-sm">
+                <form onSubmit={handleSubmit} className="flex flex-col h-full justify-between space-y-5">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="space-y-1.5">
+                      <label className="text-[11px] text-sky-200/60 font-medium ml-1 tracking-wide uppercase">Name</label>
                       <input 
                         type="text" 
                         name="name"
@@ -116,11 +115,11 @@ const ContactSection = () => {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Your name"
-                        className="w-full bg-[#111827] border border-white/10 rounded-xl px-3 py-2 text-[12px] text-white focus:outline-none focus:border-[var(--color-brand)] focus:shadow-[0_0_15px_var(--color-brand-glow)] transition-all placeholder:text-gray-600"
+                        className="w-full bg-slate-950/50 border border-white/5 rounded-xl px-3 py-2.5 text-xs md:text-sm text-slate-200 focus:outline-none focus:border-sky-500/50 focus:ring-1 focus:ring-sky-500/50 transition-all placeholder:text-slate-600"
                       />
                     </div>
-                    <div className="space-y-1">
-                      <label className="text-[11px] text-gray-200 font-medium ml-1 tracking-wide uppercase">Email</label>
+                    <div className="space-y-1.5">
+                      <label className="text-[11px] text-sky-200/60 font-medium ml-1 tracking-wide uppercase">Email</label>
                       <input 
                         type="email" 
                         name="email"
@@ -128,13 +127,13 @@ const ContactSection = () => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="you@example.com"
-                        className="w-full bg-[#111827] border border-white/10 rounded-xl px-3 py-2 text-[12px] text-white focus:outline-none focus:border-[var(--color-brand)] focus:shadow-[0_0_15px_var(--color-brand-glow)] transition-all placeholder:text-gray-600"
+                        className="w-full bg-slate-950/50 border border-white/5 rounded-xl px-3 py-2.5 text-xs md:text-sm text-slate-200 focus:outline-none focus:border-sky-500/50 focus:ring-1 focus:ring-sky-500/50 transition-all placeholder:text-slate-600"
                       />
                     </div>
                   </div>
 
-                  <div className="space-y-1">
-                    <label className="text-[11px] text-gray-200 font-medium ml-1 tracking-wide uppercase">Subject</label>
+                  <div className="space-y-1.5">
+                    <label className="text-[11px] text-sky-200/60 font-medium ml-1 tracking-wide uppercase">Subject</label>
                     <input 
                       type="text" 
                       name="subject"
@@ -142,27 +141,27 @@ const ContactSection = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       placeholder="What's this about?"
-                      className="w-full bg-[#111827] border border-white/10 rounded-xl px-3 py-2 text-[12px] text-white focus:outline-none focus:border-[var(--color-brand)] focus:shadow-[0_0_15px_var(--color-brand-glow)] transition-all placeholder:text-gray-600"
+                      className="w-full bg-slate-950/50 border border-white/5 rounded-xl px-3 py-2.5 text-xs md:text-sm text-slate-200 focus:outline-none focus:border-sky-500/50 focus:ring-1 focus:ring-sky-500/50 transition-all placeholder:text-slate-600"
                     />
                   </div>
 
-                  <div className="space-y-1 flex-grow">
-                    <label className="text-[11px] text-gray-200 font-medium ml-1 tracking-wide uppercase">Message</label>
+                  <div className="space-y-1.5 flex-grow">
+                    <label className="text-[11px] text-sky-200/60 font-medium ml-1 tracking-wide uppercase">Message</label>
                     <textarea 
                       name="message"
                       required
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Tell me about the opportunity or project..."
-                      className="w-full h-16 md:h-20 bg-[#111827] border border-white/10 rounded-xl px-3 py-2 text-[12px] text-white focus:outline-none focus:border-[var(--color-brand)] focus:shadow-[0_0_15px_var(--color-brand-glow)] transition-all resize-none placeholder:text-gray-600"
+                      className="w-full h-20 md:h-24 bg-slate-950/50 border border-white/5 rounded-xl px-3 py-2.5 text-xs md:text-sm text-slate-200 focus:outline-none focus:border-sky-500/50 focus:ring-1 focus:ring-sky-500/50 transition-all resize-none placeholder:text-slate-600"
                     ></textarea>
                   </div>
 
                   <button 
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#00b4ff] to-[#0088ff] text-[#001122] font-bold text-[13px] py-3 rounded-xl shadow-[0_0_20px_rgba(0,180,255,0.4)] hover:shadow-[0_0_30px_rgba(0,180,255,0.6)] transition-all duration-300 mt-2"
+                    className="w-full flex items-center justify-center gap-2 font-bold text-sm py-3.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white transition-all duration-300 mt-4 shadow-sm"
                   >
-                    <Send size={14} /> Send Message
+                    <Send size={16} /> Send Message
                   </button>
                 </form>
               </div>

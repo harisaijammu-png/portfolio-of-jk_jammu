@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #00d2ff;
-  --color-brand-glow: rgba(0, 210, 255, 0.3);
-  --color-bg-deep: #02060d;
-  --color-card-bg: rgba(11, 16, 26, 0.6);
-  --color-card-border: var(--color-brand);
+  --color-brand: #3b82f6; /* Steel Blue accent */
+  --color-bg-deep: #0f172a; /* Deep Slate/Charcoal background */
+  --color-card-bg: #1e293b; /* Subtle lighter slate for cards */
+  --color-card-border: rgba(255, 255, 255, 0.1); /* 1px solid delicate border */
   --font-sans: "Inter", system-ui, sans-serif;
   
   --animate-float: float 6s ease-in-out infinite;
@@ -14,27 +13,22 @@
 @layer utilities {
   .glass-panel {
     background: var(--color-card-bg);
-    backdrop-filter: blur(12px);
     border: 1px solid var(--color-card-border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(8px);
   }
   
-  .glow-border {
-    border-color: var(--color-brand);
-    box-shadow: 0 0 10px var(--color-brand-glow);
+  .solid-btn {
+    background-color: var(--color-brand);
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .glow-text {
-    text-shadow: 0 0 10px var(--color-brand-glow);
-  }
-  
-  .glow-btn {
-    box-shadow: 0 0 15px var(--color-brand-glow);
-    transition: all 0.3s ease;
-  }
-  
-  .glow-btn:hover {
-    box-shadow: 0 0 25px var(--color-brand), 0 0 50px var(--color-brand-glow);
-    transform: scale(1.05);
+  .solid-btn:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
   }
 }
 
@@ -46,7 +40,7 @@
 
 body {
   background-color: var(--color-bg-deep);
-  color: #ffffff;
+  color: #f8fafc; /* Slate 50 for highly legible text */
   overflow: hidden;
   font-family: var(--font-sans);
 }
