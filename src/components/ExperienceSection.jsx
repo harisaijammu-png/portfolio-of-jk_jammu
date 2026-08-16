@@ -5,10 +5,7 @@ import { Briefcase, MapPin, Users, Cpu, Wifi, Wrench, UserPlus, FileText } from 
 const ExperienceSection = () => {
   return (
     <section id="experience" className="relative min-h-screen flex items-center justify-center py-4 md:py-6 overflow-hidden snap-center bg-transparent">
-      {/* Background Number */}
-      <div className="absolute left-[-2%] md:left-[15%] top-[35%] md:top-[40%] text-[25vh] md:text-[40vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
-        04
-      </div>
+
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 w-full translate-y-8 md:translate-y-12">
         
@@ -17,7 +14,7 @@ const ExperienceSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto lg:ml-auto lg:mr-8 w-full"
+          className="max-w-5xl mx-auto w-full"
         >
           <div className="glass-panel px-6 md:px-8 pb-5 pt-4 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)]">
             

@@ -23,10 +23,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="relative h-full flex flex-col items-center justify-center pt-8 pb-12 overflow-hidden snap-center bg-transparent">
-      {/* Background Number */}
-      <div className="absolute right-[-2%] md:right-[15%] top-[35%] md:top-[40%] text-[25vh] md:text-[40vh] font-black text-white/[0.1] select-none pointer-events-none tracking-tighter z-0">
-        07
-      </div>
+
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 w-full translate-y-8 md:translate-y-12">
         
@@ -35,7 +32,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto lg:mr-auto lg:ml-12 w-full"
+          className="max-w-3xl mx-auto w-full"
         >
           <div className="glass-panel px-5 md:px-8 pb-5 md:pb-8 pt-4 md:pt-5 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)] flex flex-col">
             
