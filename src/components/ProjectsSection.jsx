@@ -14,7 +14,7 @@ const ProjectsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-6xl mx-auto w-full"
+          className="max-w-7xl mx-auto w-full"
         >
           <div className="glass-panel px-6 md:px-8 pb-5 pt-4 rounded-3xl relative group border-[var(--color-card-border)] bg-black/40 shadow-[inset_0_0_20px_rgba(0,210,255,0.05)]">
             
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
 
             <div className="flex flex-col lg:flex-row bg-[#080d16] rounded-2xl overflow-hidden border border-[var(--color-brand)]/40 shadow-[0_0_50px_rgba(0,180,255,0.1)] w-full relative">
               {/* Left side Image & Overlays */}
-              <div className="lg:w-1/2 relative min-h-[250px] lg:min-h-[350px] flex flex-col justify-center overflow-hidden bg-black border-r border-[#1a2b3c]">
+              <div className="lg:w-1/2 relative min-h-[300px] lg:min-h-[450px] flex flex-col justify-center overflow-hidden bg-black border-r border-[#1a2b3c]">
             {/* Featured Badge */}
             <div className="absolute top-5 left-5 z-30 bg-[#00d2ff] text-black text-[9px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-[0_0_15px_rgba(0,210,255,0.5)] tracking-wide uppercase">
               <Zap size={11} className="fill-black" /> Featured
@@ -76,40 +76,40 @@ const ProjectsSection = () => {
           </div>
 
           {/* Right side content */}
-          <div className="lg:w-1/2 p-5 lg:p-8 flex flex-col justify-center bg-[#0b101a] relative z-20">
-            <h3 className="text-[22px] lg:text-[26px] font-bold text-white mb-3 leading-snug">
+          <div className="lg:w-1/2 p-6 lg:p-12 lg:pr-14 flex flex-col justify-center bg-[#0b101a] relative z-20">
+            <h3 className="text-2xl lg:text-3xl font-extrabold text-white mb-4 leading-tight">
               Integrated Charging System for EV Power & Auxiliary Batteries Using Dual Active Bridge Converter
             </h3>
             
-            <p className="text-[#8b9bb4] mb-4 text-[14px] leading-relaxed pr-2">
+            <p className="text-[#8b9bb4] mb-6 text-sm lg:text-base leading-relaxed">
               Designed an intelligent DC-DC DAB converter control system to efficiently charge and manage both traction and auxiliary EV batteries.
             </p>
 
-            <div className="flex flex-wrap gap-2 mb-5">
+            <div className="flex flex-wrap gap-2.5 mb-6 md:mb-8">
               {["DC-DC Converter", "Dual Active Bridge (DAB)", "EV Battery Management", "Power Electronics", "Control Systems"].map(tag => (
-                <span key={tag} className="text-[11px] md:text-[12px] text-[#00b4d8] bg-transparent border border-[#1a364b] px-3 py-1 rounded-full">
+                <span key={tag} className="text-xs lg:text-sm font-semibold tracking-wide text-[#00d2ff] bg-[#00d2ff]/10 border border-[#00d2ff]/30 px-4 py-1.5 rounded-full">
                   {tag}
                 </span>
               ))}
             </div>
 
-            <div className="flex items-center gap-2.5 bg-[#0f1724] border border-[#1a2b3c] rounded-lg p-3 mb-4">
-              <CheckCircle className="text-[#00d2ff] w-[14px] h-[14px] flex-shrink-0" />
-              <span className="text-[12px] text-white">Published - DOI: <a href="https://doi.org/10.64771/jsetms.2025.v02.i10.pp42-53" target="_blank" rel="noopener noreferrer" className="text-[#00b4d8] hover:underline">10.64771/jsetms.2025.v02.i10.pp42-53</a></span>
+            <div className="flex items-center gap-3 bg-[#0f1724] border border-[#1a2b3c] rounded-xl p-4 mb-6 md:mb-8 shadow-inner">
+              <CheckCircle className="text-[#00d2ff] w-5 h-5 flex-shrink-0" />
+              <span className="text-sm text-gray-300">Published - DOI: <a href="https://doi.org/10.64771/jsetms.2025.v02.i10.pp42-53" target="_blank" rel="noopener noreferrer" className="text-[#00d2ff] font-medium hover:underline">10.64771/jsetms.2025.v02.i10.pp42-53</a></span>
             </div>
 
-            <div className="flex flex-wrap items-center gap-3 mt-1">
+            <div className="flex flex-wrap items-center gap-4 mt-2">
               <a 
                 href="https://www.google.com/search?q=Integrated+Charging+System+for+EV+Power+and+Auxiliary+Batteries+Using+Dual+Active+Bridge+Converter"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-[#111827] border border-[#2a3b55] text-white hover:bg-[#1f2937] transition-colors text-[12px] md:text-[13px] font-medium"
+                className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#111827] border border-[#2a3b55] text-white hover:bg-[#1f2937] transition-colors text-sm font-semibold tracking-wide hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]"
               >
-                Read More <Search size={14} className="text-gray-400" />
+                Read More <Search size={16} className="text-gray-400" />
               </a>
               
-              <a href="https://doi.org/10.64771/jsetms.2025.v02.i10.pp42-53" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#00b4ff] to-[#0088ff] text-[#001122] shadow-[0_0_20px_rgba(0,180,255,0.4)] hover:shadow-[0_0_30px_rgba(0,180,255,0.6)] transition-all text-[12px] md:text-[13px] font-bold">
-                View Publication <ExternalLink size={14} />
+              <a href="https://doi.org/10.64771/jsetms.2025.v02.i10.pp42-53" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-[#00d2ff] to-[#0088ff] text-[#001122] shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:shadow-[0_0_30px_rgba(0,210,255,0.5)] transition-all text-sm font-black uppercase tracking-wider group hover:scale-105">
+                View Publication <ExternalLink size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
             </div>
           </div>
