@@ -75,7 +75,7 @@ const HeroSection = () => {
             <span className="text-sm font-medium tracking-wider text-sky-300 uppercase">OPEN TO WORK</span>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="mb-[-0.5rem] md:mb-[-1rem]">
+          <motion.div variants={itemVariants} className="mb-1 md:mb-2">
             <span className="text-xl md:text-2xl font-medium tracking-wide text-slate-400">Hi, I'm</span>
           </motion.div>
           <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-black tracking-tighter leading-[1.05] uppercase">
@@ -84,7 +84,7 @@ const HeroSection = () => {
           </motion.h1>
 
           <motion.div variants={itemVariants} className="h-6">
-            <Typewriter text="ELECTRICAL ENGINEER • JUNIOR ROBOTICS ENGINEER" delay={1} />
+            <Typewriter text="Working Student – Embedded Systems / Robotics / Automation" delay={1} />
           </motion.div>
 
           <motion.div variants={itemVariants} className="mt-8 flex flex-col sm:flex-row gap-4">
