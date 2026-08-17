@@ -4,7 +4,7 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 const educationData = [
   {
-    degree: "MSc Electrical Engineering",
+    degree: "M.Sc. Electromobility",
     institution: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)",
     duration: "Apr 2026 – Present",
     location: "Erlangen, Germany"
