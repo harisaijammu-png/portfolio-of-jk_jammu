@@ -23,13 +23,7 @@ const AboutSection = () => {
 
             <div className="space-y-8 text-lg md:text-xl lg:text-2xl text-slate-300 leading-relaxed md:leading-[1.7] font-light text-left">
               <p>
-                I am an MSc Electrical Engineering student at FAU Erlangen-Nürnberg with hands-on industry experience working as a Junior Robotics Engineer.
-              </p>
-              <p>
-                My expertise spans the full development cycle, including programming in embedded C/C++, sensor and actuator integration, technical documentation, and hardware validation.
-              </p>
-              <p>
-                I adapt quickly to new tools in fast-paced environments and am actively seeking a working student or part-time role focused on embedded systems, robotics, or industrial automation.
+                MSc Electromobility student at FAU Erlangen-Nürnberg with hands-on industry experience as the first Junior Robotics Engineer at Koding Caravan, working across the full development cycle — embedded C/C++, sensor and actuator integration, hardware validation, and technical documentation. Adapts quickly to new tools and fast-paced environments. Seeking a working student position in embedded systems, robotics, or automation.
               </p>
             </div>
             

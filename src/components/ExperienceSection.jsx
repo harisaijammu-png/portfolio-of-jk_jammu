@@ -13,12 +13,12 @@ const ExperienceSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="max-w-6xl mx-auto w-full"
+          className="max-w-7xl mx-auto w-full px-2 md:px-0"
         >
-          <div className="bg-slate-900/40 backdrop-blur-lg border border-white/10 p-6 md:p-8 rounded-3xl relative group shadow-2xl">
+          <div className="bg-slate-900/40 backdrop-blur-lg border border-white/10 p-5 md:p-6 rounded-3xl relative group shadow-2xl">
             
             {/* Header Layout */}
-            <div className="flex justify-between items-end mb-6 border-b border-white/5 pb-4">
+            <div className="flex justify-between items-end mb-4 border-b border-white/5 pb-3">
               <div className="px-6 py-2 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300 text-sm md:text-base font-bold tracking-widest uppercase shadow-sm">
                 EXPERIENCE
               </div>
@@ -26,7 +26,7 @@ const ExperienceSection = () => {
 
             {/* Content Layout */}
             <div className="pt-2">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 md:mb-6">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3 md:mb-4">
                 <div>
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-100 mb-3">Junior Robotics Engineer</h3>
                   <div className="flex items-center space-x-2 text-sky-400 mb-3 font-medium text-lg">
@@ -41,19 +41,18 @@ const ExperienceSection = () => {
                 </div>
                 <div className="mt-4 md:mt-0">
                   <span className="inline-block px-5 py-2 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-200 text-sm font-medium">
-                    Sep 2025 – Mar 2026
+                    25 March 2025 – 24 March 2026
                   </span>
                 </div>
               </div>
 
-              <div className="mt-4 space-y-4">
+              <div className="mt-3 space-y-3">
                 {[
-                  { icon: <Users className="w-4 h-4 text-sky-400" />, text: "Worked under a Senior Robotics Engineer to help establish the company's robotics development capability from the ground up." },
-                  { icon: <Cpu className="w-4 h-4 text-sky-400" />, text: "Designed and built Arduino-based prototypes in C/C++, taking systems from concept through to validated hardware." },
-                  { icon: <Wifi className="w-4 h-4 text-sky-400" />, text: "Integrated sensors (ultrasonic, IR, IMU) and actuators via I2C/UART for real-time automation applications." },
-                  { icon: <Wrench className="w-4 h-4 text-sky-400" />, text: "Diagnosed hardware faults and software bugs under time pressure, improving system reliability, reducing downtime." },
-                  { icon: <UserPlus className="w-4 h-4 text-sky-400" />, text: "Collaborated with founders to translate requirements into working prototypes within tight deadlines." },
-                  { icon: <FileText className="w-4 h-4 text-sky-400" />, text: "Authored technical documentation, wiring schematics, and test reports to support ongoing product development." }
+                  { icon: <Users className="w-4 h-4 text-sky-400" />, text: "Collaborated with senior leadership to establish the company's foundational robotics capabilities from the ground up, accelerating initial product timelines by [X] months." },
+                  { icon: <Cpu className="w-4 h-4 text-sky-400" />, text: "Engineered functional Arduino-based prototypes in C/C++, translating founder requirements into [Number] validated hardware systems delivered under tight deadlines." },
+                  { icon: <Wifi className="w-4 h-4 text-sky-400" />, text: "Developed real-time automation solutions by integrating ultrasonic, IR, and IMU sensors with actuators via I2C/UART, achieving a [X]% increase in system accuracy." },
+                  { icon: <Wrench className="w-4 h-4 text-sky-400" />, text: "Resolved complex hardware faults and software bugs under strict time pressure, improving prototype reliability and reducing system downtime by [X]%." },
+                  { icon: <FileText className="w-4 h-4 text-sky-400" />, text: "Standardized development workflows by authoring comprehensive technical documentation, wiring schematics, and test reports to streamline knowledge transfer." }
                 ].map((item, idx) => (
                   <motion.div 
                     key={idx}
@@ -66,7 +65,7 @@ const ExperienceSection = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mt-1">
                       {item.icon}
                     </div>
-                    <div className="text-slate-300 text-sm md:text-base font-light leading-relaxed md:leading-loose pt-1">
+                    <div className="text-slate-300 text-[13px] md:text-[15px] font-light leading-snug md:leading-relaxed pt-1.5">
                       {item.text}
                     </div>
                   </motion.div>
@@ -74,7 +73,7 @@ const ExperienceSection = () => {
               </div>
 
               {/* Experience Letter Button */}
-              <div className="mt-6 flex justify-center md:justify-start">
+              <div className="mt-4 flex justify-center md:justify-start">
                 <a 
                   href="/certs/Exp_Letter.pdf" 
                   target="_blank" 
